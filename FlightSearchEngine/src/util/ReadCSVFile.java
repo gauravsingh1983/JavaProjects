@@ -25,7 +25,7 @@ public static void main(String[] args)
 public static String getFilePath()
 {
 	String filePath = null;
-	try (FileReader reader = new FileReader("C:\\gaurav\\KRSWorkSpace\\FlightSearchEngine\\src\\util\\flightsearchengine.properties")) {
+	try (FileReader reader = new FileReader("src/util/flightsearchengine.properties")) {
 		Properties properties = new Properties();
 		properties.load(reader);
 		filePath = properties.getProperty("pathToCSV");
